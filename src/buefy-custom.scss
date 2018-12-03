@@ -1,0 +1,65 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #5B86E5;
+$primary-invert: findColorInvert($primary);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+// Extensions
+@import '~bulma-quickview';
+
+// Import custom styles
+$app-bg-color: #F2F6FA;
+
+html, body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $app-bg-color;
+}
+
+.m-t-sm {
+  margin-top: 5px;
+}
+.m-t-md {
+  margin-top: 15px;
+}
+.m-t-lg {
+  margin-top: 30px;
+}
+.m-b-sm {
+  margin-bottom: 5px;
+}
+.m-b-md {
+  margin-bottom: 15px;
+}
+.m-b-lg {
+  margin-bottom: 30px;
+}
+.is-underlined {
+  padding-bottom: 2.5px;
+  // text-decoration: underline;
+  border-bottom: .5px solid #fff;
+}
