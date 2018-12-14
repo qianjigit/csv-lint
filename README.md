@@ -43,4 +43,4 @@ yarn build
 yarn build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Since this is a MLP (Minimum Loveable Product), best practices of developing Vue.js application were not strictly followed, if you are interested to see a more structured application example, please feel free to take a look at [vue-better-practices](https://github.com/slashbit/vue-better-practices), which show cases some of the better practices I accumulated when developing Vue.js applications.
